@@ -1,0 +1,440 @@
+
+/* body flex adjustment for  sticky footer */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+
+*{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* --- */
+
+.brand-logo img {
+    max-height: 54px;
+}
+
+.hidden {
+    display: none;
+}
+
+.screen-unit {
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen-height {
+    height: 100vh;
+}
+
+.screen-width {
+    width: 100vh;
+}
+
+.more-screen-height {
+    height: 110vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.padded-compact {
+    padding: 20px;
+}
+
+.padded-comfortable {
+    padding: 45px;
+}
+
+.padded-cozy {
+    padding: 70px;
+}
+
+.padded-top-compact {
+    padding-top: 20px;
+}
+
+.padded-top-comfortable {
+    padding-top: 45px;
+}
+
+.padded-top-cozy {
+    padding-top: 70px;
+}
+
+.padded-bottom-compact {
+    padding-bottom: 20px;
+}
+
+.padded-bottom-comfortable {
+    padding-bottom: 45px;
+}
+
+.padded-bottom-cozy {
+    padding-bottom: 70px;
+}
+
+
+
+
+.margined-bottom-comfortable {
+    margin-bottom: 45px;
+}
+
+.margined-top-comfortable {
+    margin-top: 45px;
+}
+
+
+.margined-bottom-compact {
+    margin-bottom: 20px;
+}
+
+.margined-top-compact {
+    margin-top: 20px;
+}
+
+
+
+.strong {
+    font-weight: 600;
+}
+
+.rounded {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.slides img {
+    filter: brightness(50%) saturate(150%);
+}
+
+img.dark {
+    filter: brightness(60%) saturate(150%);
+}
+
+.zoomer {
+    transition: transform 0.25s ease-in-out;
+}
+
+.zoomer:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.fader {
+    filter: brightness(60%);
+}
+
+.fader:hover {
+    filter: brightness(90%);
+}
+
+/* 
+#card-hackathon {
+    background-image: url('../images/hero-slider/1.jpg');
+    
+    /* transition: background 3s ease-in-out; *
+}
+
+#card-conference {
+    background-image: url('../images/hero-slider/2.jpg');
+    /* transition: background 3s ease-in-out; *
+} 
+
+/* 
+
+/* Clip text element *
+.clip-text {
+    font-size: 3em;
+    font-weight: bold;
+    /* Color fallback *
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: background-clip 1s;
+}
+
+.clip-text:hover {
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background *
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) *
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here *
+.clip-text--no-textzone:before {
+    background-position: 15em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+ */
+
+.card.tiny {
+    height: 250px;
+}
+
+.btn-register-hero {
+    border: 1px solid orange;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.btn-register-hero:hover {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+
+.btn-registerr-hero {
+    border: 1px solid orange;
+    color: orange;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.btn-registerr-hero:hover {
+    border: 1px solid white;
+    color: white;
+    border-radius: 0px;
+    background-color: orange;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+img.sponsor {
+
+    transition: transform 0.25s ease-in-out;
+}
+
+img.sponsor:hover {
+
+    transform: scale(1.05, 1.05);
+}
+
+#hero-slider {
+    transform-style: preserve-3d;
+    -webkit-animation: bgSlider;
+    animation: bgSlider;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-transition: background-image 1s;
+    -o-transition: background-image 1s;
+    transition: background-image 1s;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#hero-slider img {
+    transform: translateZ(50px);
+}
+
+
+
+.gradient-orange {
+    background: #ff6f00;
+    background: linear-gradient(to bottom, #ff6f00, #e65100);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@-webkit-keyframes bgSlider {
+    0% {
+        background-image: url("../images/hero-slider/event-1597531.jpg");
+    }
+    25% {
+        background-image: url("../images/hero-slider/microphone-2316268.jpg");
+    }
+    50% {
+        background-image: url("../images/hero-slider/advice-advise-advisor-7096.jpg");
+    }
+    75% {
+        background-image: url("../images/hero-slider/agreement-business-clapping-990817.jpg");
+    }
+    100% {
+        background-image: url("../images/hero-slider/event-1597531.jpg");
+    }
+}
+
+@keyframes bgSlider {
+    0% {
+        background-image: url("../images/hero-slider/advice-advise-advisor-7096.jpg");
+    }
+    25% {
+        background-image: url("../images/hero-slider/event-1597531.jpg");
+    }
+    50% {
+        background-image: url("../images/hero-slider/agreement-business-clapping-990817.jpg");
+    }
+    75% {
+        background-image: url("../images/hero-slider/microphone-2316268.jpg");
+    }
+    100% {
+        background-image: url("../images/hero-slider/event-1597531.jpg");
+    }
+}
+
+nav {
+
+    text-transform: uppercase;
+}
+nav ul li a:hover,
+nav ul li:hover,
+#navig:hover
+{
+    background-color: orange;
+    color: white;
+}
+
+.right-border-orange {
+    border-right: 3px solid orange;
+}
+
+.speaker img {
+    max-width: 150px;
+    border-radius: 50% 0% 50% 50%;
+    transition: transform ease-in-out 0.25s, border-radius ease-in-out 0.25s;
+}
+
+.speaker img:hover {
+    border-radius: 50% 0% 50% 0%;
+    transform: scale(1.1, 1.1);
+}
+.parallax-container
+{
+     height: 78vh
+}
+#eventdivider
+{
+    width: 340px;
+    background-color: yellow;
+    height: 2px;
+    margin-left: 180px;
+}
+#d    ates
+{
+    font-size: 20px;
+}
+#venue
+{
+    font-size: 40px;
+}
+
+#registerbtn
+{
+    
+    color: orange;
+}
+
+#registerbtn:hover
+{
+    background-color: orange;
+    color: white;
+
+}
+#prizedivider
+{
+    width: 950px;
+    height: 1px;
+    background-color: black;
+    margin-left: 250px;
+}
+#domainthree
+{
+    margin: 0px;
+    width: 290px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+#date
+{
+    font-size: 40px;
+}
+
+#footerb
+{
+    background-image: url(/images/adult-agreement-beard-618550%20copy.jpg);
+}
+.up
+{
+    font-size: 40px;
+    color: orange;
+
+
+}
+.upone
+{
+    font-size: 30px;
+     color: orange;
+    text-transform: uppercase;
+}

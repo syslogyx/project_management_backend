@@ -1,0 +1,29 @@
+/* *{
+    font-family: 'Raleway', sans-serif;
+} */
+
+.prize {
+    transform-style: preserve-3d;
+}
+
+
+
+.prize svg {
+    height: 100px;
+    transform: translateZ(30px)
+}
+
+.prize h4 {
+    
+    transform: translateZ(50px)
+}
+
+.prize h5 {
+    
+    transform: translateZ(10px)
+}
+#event
+{
+    word-spacing: 2px;
+    font-size: 22px;
+}

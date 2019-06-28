@@ -1,0 +1,8 @@
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+    Running scheduled command: '/usr/bin/php7.2' 'artisan' eod:send > '/var/www/project_mgmt/storage/logs/schedule-dc673c7a40c5cf7b3a099a93f8daeeb600ccb8ee.log' 2>&1
+
+https://quantizd.com/how-to-use-laravel-task-scheduler-on-windows-10/

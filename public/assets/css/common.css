@@ -1,0 +1,9 @@
+label.mandatory:after {
+    content: ' *';
+    color: #FB3A3A;
+    display: inline;
+}
+
+.btn.focus, .btn:focus, .btn:hover{
+	color: #ffffff;
+}

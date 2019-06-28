@@ -1,0 +1,31 @@
+#divider
+{
+    width: 700px;
+    margin-left: 350px;
+    background-color: black;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#name
+{
+    color: orange;
+}
+#name:hover
+{
+    color:#607d8b;
+}
+#secondcol
+{
+   overflow: hidden;
+    height: 200px;
+    width: 300px;
+}
+#line
+{
+    width: 700px;
+    margin-left: 150px;
+    background-color: black;
+}
